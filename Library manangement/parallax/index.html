@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+ <head>
+ <title>Creating a Simple Parallax Scrolling Website</title>
+ <link rel="stylesheet" href="css/style.css"/>
+ <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+ <link href='http://fonts.googleapis.com/css?family=Wellfleet' rel='stylesheet' type='text/css'>
+
+ <link href='http://fonts.googleapis.com/css?family=Wellfleet' rel='stylesheet' type='text/css'>
+ <link href='http://fonts.googleapis.com/css?family=Arvo:400,700,400italic,700italic' rel='stylesheet' type='text/css'> 
+ <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+ <link href='http://fonts.googleapis.com/css?family=Goudy+Bookletter+1911' rel='stylesheet' type='text/css'>
+ <style type="text/css">
+ 	
+body {
+    font-family: "Lato", sans-serif;
+    background-image: url("bac.jpg");
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: black;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+
+</head>
+
+<body>
+	<header id="header">
+		<div id="mySidenav" class="sidenav">
+			  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			  <a href="ebooks11.html">Space</a>
+			  <a href="ebooks12.html">Programming</a>
+			  <a href="ebooks13.html">Health</a>
+			 
+			</div>
+
+
+			<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Categories </span>
+
+			<script>
+			function openNav() {
+			    document.getElementById("mySidenav").style.width = "250px";
+			}
+
+			function closeNav() {
+			    document.getElementById("mySidenav").style.width = "0";
+			}
+			</script>
+		<div class="content">
+		<div id="logo"><a href="#">LibSoft</a></div>
+		<nav id="nav">
+			<ul>
+				 <li><a href="#slide1" class="active" title="Next Section" >Slide 1</a></li>
+ 				<li><a href="#slide2" title="Next Section">Slide 2</a></li>
+ 				<li><a href="#slide3" title="Next Section">Slide 3</a></li>
+ 				<li><a href="#slide4" title="Next Section">Slide 4</a></li>
+ 				<li><a href="#slide5" title="Next Section">Slide 5</a></li>
+			</ul>
+		</nav>
+		</div>
+	</header>
+	 <div id="slide1">
+ <div class="content">
+ <div id="christmas_tree"> </div>
+ <div id="snowflakes1"></div>
+ <div id="snowflakes2"></div>
+ <h2>LibSoft</h2>
+ <h1>An Online Library</h1>
+ <div id="divider"> </div>
+ <div id="ribbon"></div>
+ <div id="new_year"> </div>
+ </div> 
+ </div> 
+ <div id="slide2">
+ <div class="content" >
+ <div class="quotes_container">
+ <h3 class="quotes">“Then the Grinch thought of something he hadn't before! What if Christmas, he thought, doesn't come from a store. What if Christmas...perhaps...means a little bit more!”</h3>
+ <img src="img/dr-seuss.png" align="left"/> <h4 class="author_name_gray">Dr. Seuss </h4>
+ </div> 
+ </div> 
+ </div> 
+ <div id="slide3">
+ <div class="content">
+ <div class="quotes_container">
+ <h3 class="quotes">“I truly believe that if we keep telling the Christmas story, singing the Christmas songs, and living the Christmas spirit, we can bring joy and happiness and peace to this world.” </h3>
+ <img src="img/norman.png" align="left"/> <h4 class="author_name_white">Norman Vincent Peale </h4>
+ </div> 
+ </div> 
+ </div> 
+ <div id="slide4">
+ <div class="content">
+ <div class="quotes_container">
+ <h3 class="quotes">“Christmas doesn't come from a store, maybe Christmas perhaps means a little bit more....” </h3>
+ <img src="img/dr-seuss.png" align="left"/> <h4 class="author_name_gray">Dr. Seuss </h4>
+ </div> 
+ </div> 
+ </div> 
+ <div id="slide5">
+ <div class="content">
+ <div class="quotes_container">
+ <h3 class="quotes">“My idea of Christmas, whether old-fashioned or modern, is very simple: loving others. Come to think of it, why do we have to wait for Christmas to do that?” </h3>
+ <img src="img/bob.png" align="left"/> <h4 class="author_name_white">Bob Hope </h4>
+ </div>
+ </div> 
+ </div> 
+</body>
+</html>

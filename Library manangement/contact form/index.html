@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<head>
+
+<title>Contact Form</title>
+<link rel="stylesheet" href="css/style.css" />
+<link href='http://fonts.googleapis.com/css?family=Engagement' rel='stylesheet' type='text/css'>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/jquery.uniform.min.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript" charset="utf-8">
+      $(function(){
+        $("input:checkbox, input:radio, input:file, select").uniform();
+      });
+    </script>
+</head>
+<body>
+<article>
+<h1>Contact form</h1>
+<form>
+	<ul>
+        <li>
+        	<label for="name">Name:</label>
+            <input type="text" size="40" id="name" required />
+        </li>
+        <li>
+        	<label for="email">Email:</label>
+            <input type="email" size="40" id="email" required />
+        </li>
+        <li>
+            <label>Upload a file:</label>
+            <input type="file" />
+        </li>
+        <li>
+        	<label for="message">Query:</label>
+            <textarea cols="50" rows="5" id="message" required></textarea>
+		</li>
+	</ul>
+    <p>
+        <button type="submit" class="action">Submit</button>
+        <button type="reset" class="right">Reset</button>
+    </p>
+</form>
+</article>
+</body>
+</html>

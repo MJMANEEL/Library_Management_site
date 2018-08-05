@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+    font-family: "Lato", sans-serif;
+    background-image: url("bac.jpg");
+}
+img {
+            
+            margin-left: 50px;
+            border-radius: 5px;
+            margin-bottom: 10px
+            float:left;
+            
+        }
+        div{
+
+            float: left;
+            width: 250px;
+            height:300px;
+        }
+        
+        .buttonDownload {
+            display: inline-block;
+            position: relative;
+            padding: 10px 25px;
+            vertical-align: bottom;
+            background-color:#0EC1EE;
+            color: white;
+            margin-left:60px; 
+            font-family: sans-serif;
+            text-decoration: none;
+            font-size: 0.9em;
+            text-align: center;
+            text-indent: 15px;
+            margin-bottom: 40px;
+        }
+
+        .buttonDownload:hover {
+            background-color: #333;
+            color: white;
+        }
+
+        .buttonDownload:before, .buttonDownload:after {
+            content: ' ';
+            display: block;
+            position: absolute;
+            left: 15px;
+            top: 52%;
+        }
+
+        /* Download box shape  */
+        .buttonDownload:before {
+            width: 10px;
+            height: 2px;
+            border-style: solid;
+            border-width: 0 2px 2px;
+        }
+
+        /* Download arrow shape */
+        .buttonDownload:after {
+            width: 0;
+            height: 0;
+            margin-left: 3px;
+            margin-top: -7px;
+          
+            border-style: solid;
+            border-width: 4px 4px 0 4px;
+            border-color: transparent;
+            border-top-color: inherit;
+            
+            animation: downloadArrow 2s linear infinite;
+            animation-play-state: paused;
+        }
+
+        .buttonDownload:hover:before {
+            border-color: #4CC713;
+        }
+
+        .buttonDownload:hover:after {
+            border-top-color: #4CC713;
+            animation-play-state: running;
+        }
+
+        /* keyframes for the download icon anim */
+        @keyframes downloadArrow {
+            /* 0% and 0.001% keyframes used as a hackish way of having the button frozen on a nice looking frame by default */
+            0% {
+                margin-top: -7px;
+                opacity: 1;
+            }
+            
+            0.001% {
+                margin-top: -15px;
+                opacity: 0;
+            }
+            
+            50% {
+                opacity: 1;
+            }
+            
+            100% {
+                margin-top: 0;
+                opacity: 0;
+            }
+        }
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color:#0EC1EE;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+.books{
+    margin-top: 50px;
+    margin-left: 10px;
+}
+span{
+    margin-left: -1030px;
+    float: top;
+    color:#0EC1EE;
+    
+}
+</style>
+</head>
+<body>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="ebooks11.html">Space</a>
+  <a href="ebooks12.html">Programming</a>
+  <a href="ebooks13.html">Health</a>
+</div>
+    <br>
+        <div class="books">
+        <img src="1.JPEG" width="200px" height="250px" border="5px">
+        <!--<p>Two artists at the height of their powers have created a beautiful book with an unforgettable message about the moon and an even more important message about the earth. A publishing event!
+        </p>-->
+        <a href="#" class="buttonDownload">Download</a>
+        </div>
+        
+        <div class="books">
+        
+        <img src="2.JPEG" width="200px" height="250px" border="5px">
+        <!--<p>hey this book is best seller of the year.............................................................................................................................//////??????????????????????????????????????????????????????????????????????????????????????????????????????????????-->
+        <a href="#" class="buttonDownload">Download</a>
+        </div>
+    
+        <div class="books">
+        <img src="3.JPEG" width="200px" height="250px" border="5px">
+        <a href="#" class="buttonDownload">Download</a>
+        </div>
+        <div class="books">
+        <img src="21.jpg" width="200px" height="250px" border="5px">
+        <a href="#" class="buttonDownload">Download</a>
+        </div>
+        <div class="books">
+        <img src="22.jpg" width="200px" height="250px" border="5px">
+        <a href="#" class="buttonDownload">Download</a>
+        </div>
+         <div class="books">
+        <img src="50.png" width="200px" height="250px" border="5px">
+        <a href="#" class="buttonDownload">Download</a>
+        </div>
+         <div class="books">
+        <img src="51.png" width="200px" height="250px" border="5px">
+        <a href="#" class="buttonDownload">Download</a>
+        </div>
+         <div class="books">
+        <img src="52.png" width="200px" height="250px" border="5px">
+        <a href="#" class="buttonDownload">Download</a>
+        </div>
+       
+
+
+
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Categories </span>
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+     
+</body>
+</html> 
